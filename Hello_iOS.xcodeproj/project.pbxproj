@@ -10,13 +10,18 @@
 		2174288B7AE82CAB7276922E /* Pods_Hello_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E1EF1F2AAAFEF9B1BE18B6 /* Pods_Hello_iOSTests.framework */; };
 		350908CE81B5AB24BAC4BF31 /* Pods_Hello_iOS_Hello_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A304BBBE47FBCD65C7E4D7 /* Pods_Hello_iOS_Hello_iOSUITests.framework */; };
 		3D60F29F2714153900B2B945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60F29E2714153900B2B945 /* AppDelegate.swift */; };
-		3D60F2A12714153900B2B945 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60F2A02714153900B2B945 /* SceneDelegate.swift */; };
 		3D60F2A32714153900B2B945 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60F2A22714153900B2B945 /* ViewController.swift */; };
-		3D60F2A62714153900B2B945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60F2A42714153900B2B945 /* Main.storyboard */; };
 		3D60F2A82714153C00B2B945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D60F2A72714153C00B2B945 /* Assets.xcassets */; };
 		3D60F2AB2714153C00B2B945 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60F2A92714153C00B2B945 /* LaunchScreen.storyboard */; };
 		3D60F2B62714153D00B2B945 /* Hello_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60F2B52714153D00B2B945 /* Hello_iOSTests.swift */; };
 		3D60F2C12714153D00B2B945 /* Hello_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60F2C02714153D00B2B945 /* Hello_iOSUITests.swift */; };
+		3D9BB78C271425B300C26941 /* TabbarGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB78B271425B300C26941 /* TabbarGenerator.swift */; };
+		3D9BB79127142E4D00C26941 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB79027142E4D00C26941 /* HomePageViewController.swift */; };
+		3D9BB79627142E5C00C26941 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB79527142E5C00C26941 /* InfoViewController.swift */; };
+		3D9BB79B27142E6600C26941 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB79A27142E6600C26941 /* AboutViewController.swift */; };
+		3D9BB7A327143A7F00C26941 /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9BB7A227143A7F00C26941 /* HomePageViewController.xib */; };
+		3D9BB7A827143B0A00C26941 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9BB7A727143B0A00C26941 /* InfoViewController.xib */; };
+		3D9BB7AD27143B2500C26941 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9BB7AC27143B2500C26941 /* AboutViewController.xib */; };
 		78E786D04CC6B3685333A2F8 /* Pods_Hello_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D75C08E25121EA103A5F2D /* Pods_Hello_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,9 +46,7 @@
 		12E1EF1F2AAAFEF9B1BE18B6 /* Pods_Hello_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hello_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D60F29B2714153900B2B945 /* Hello_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D60F29E2714153900B2B945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D60F2A02714153900B2B945 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3D60F2A22714153900B2B945 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3D60F2A52714153900B2B945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D60F2A72714153C00B2B945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D60F2AA2714153C00B2B945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D60F2AC2714153C00B2B945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +56,13 @@
 		3D60F2BC2714153D00B2B945 /* Hello_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Hello_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D60F2C02714153D00B2B945 /* Hello_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_iOSUITests.swift; sourceTree = "<group>"; };
 		3D60F2C22714153D00B2B945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D9BB78B271425B300C26941 /* TabbarGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarGenerator.swift; sourceTree = "<group>"; };
+		3D9BB79027142E4D00C26941 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		3D9BB79527142E5C00C26941 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		3D9BB79A27142E6600C26941 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		3D9BB7A227143A7F00C26941 /* HomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
+		3D9BB7A727143B0A00C26941 /* InfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		3D9BB7AC27143B2500C26941 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		61D75C08E25121EA103A5F2D /* Pods_Hello_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hello_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A304BBBE47FBCD65C7E4D7 /* Pods_Hello_iOS_Hello_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hello_iOS_Hello_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77492D09B1A4688C1D7DF222 /* Pods-Hello_iOS-Hello_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello_iOS-Hello_iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Hello_iOS-Hello_iOSUITests/Pods-Hello_iOS-Hello_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,12 +137,17 @@
 			isa = PBXGroup;
 			children = (
 				3D60F29E2714153900B2B945 /* AppDelegate.swift */,
-				3D60F2A02714153900B2B945 /* SceneDelegate.swift */,
 				3D60F2A22714153900B2B945 /* ViewController.swift */,
-				3D60F2A42714153900B2B945 /* Main.storyboard */,
 				3D60F2A72714153C00B2B945 /* Assets.xcassets */,
 				3D60F2A92714153C00B2B945 /* LaunchScreen.storyboard */,
 				3D60F2AC2714153C00B2B945 /* Info.plist */,
+				3D9BB78B271425B300C26941 /* TabbarGenerator.swift */,
+				3D9BB79027142E4D00C26941 /* HomePageViewController.swift */,
+				3D9BB7A227143A7F00C26941 /* HomePageViewController.xib */,
+				3D9BB79527142E5C00C26941 /* InfoViewController.swift */,
+				3D9BB7A727143B0A00C26941 /* InfoViewController.xib */,
+				3D9BB79A27142E6600C26941 /* AboutViewController.swift */,
+				3D9BB7AC27143B2500C26941 /* AboutViewController.xib */,
 			);
 			path = Hello_iOS;
 			sourceTree = "<group>";
@@ -165,7 +180,6 @@
 				8BA2D07C4410D4F3209AAE66 /* Pods-Hello_iOSTests.debug.xcconfig */,
 				7DC16A6859C20B89621F80AF /* Pods-Hello_iOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -276,8 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D60F2AB2714153C00B2B945 /* LaunchScreen.storyboard in Resources */,
+				3D9BB7A327143A7F00C26941 /* HomePageViewController.xib in Resources */,
+				3D9BB7A827143B0A00C26941 /* InfoViewController.xib in Resources */,
 				3D60F2A82714153C00B2B945 /* Assets.xcassets in Resources */,
-				3D60F2A62714153900B2B945 /* Main.storyboard in Resources */,
+				3D9BB7AD27143B2500C26941 /* AboutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +389,10 @@
 			files = (
 				3D60F2A32714153900B2B945 /* ViewController.swift in Sources */,
 				3D60F29F2714153900B2B945 /* AppDelegate.swift in Sources */,
-				3D60F2A12714153900B2B945 /* SceneDelegate.swift in Sources */,
+				3D9BB79B27142E6600C26941 /* AboutViewController.swift in Sources */,
+				3D9BB79127142E4D00C26941 /* HomePageViewController.swift in Sources */,
+				3D9BB79627142E5C00C26941 /* InfoViewController.swift in Sources */,
+				3D9BB78C271425B300C26941 /* TabbarGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,14 +428,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3D60F2A42714153900B2B945 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D60F2A52714153900B2B945 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3D60F2A92714153C00B2B945 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
