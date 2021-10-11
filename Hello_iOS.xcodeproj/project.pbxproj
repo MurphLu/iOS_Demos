@@ -10,7 +10,6 @@
 		2174288B7AE82CAB7276922E /* Pods_Hello_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E1EF1F2AAAFEF9B1BE18B6 /* Pods_Hello_iOSTests.framework */; };
 		350908CE81B5AB24BAC4BF31 /* Pods_Hello_iOS_Hello_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A304BBBE47FBCD65C7E4D7 /* Pods_Hello_iOS_Hello_iOSUITests.framework */; };
 		3D60F29F2714153900B2B945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60F29E2714153900B2B945 /* AppDelegate.swift */; };
-		3D60F2A32714153900B2B945 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60F2A22714153900B2B945 /* ViewController.swift */; };
 		3D60F2A82714153C00B2B945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D60F2A72714153C00B2B945 /* Assets.xcassets */; };
 		3D60F2AB2714153C00B2B945 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60F2A92714153C00B2B945 /* LaunchScreen.storyboard */; };
 		3D60F2B62714153D00B2B945 /* Hello_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60F2B52714153D00B2B945 /* Hello_iOSTests.swift */; };
@@ -46,7 +45,6 @@
 		12E1EF1F2AAAFEF9B1BE18B6 /* Pods_Hello_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hello_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D60F29B2714153900B2B945 /* Hello_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D60F29E2714153900B2B945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D60F2A22714153900B2B945 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D60F2A72714153C00B2B945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D60F2AA2714153C00B2B945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D60F2AC2714153C00B2B945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,18 +134,8 @@
 		3D60F29D2714153900B2B945 /* Hello_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				3D60F29E2714153900B2B945 /* AppDelegate.swift */,
-				3D60F2A22714153900B2B945 /* ViewController.swift */,
-				3D60F2A72714153C00B2B945 /* Assets.xcassets */,
-				3D60F2A92714153C00B2B945 /* LaunchScreen.storyboard */,
-				3D60F2AC2714153C00B2B945 /* Info.plist */,
-				3D9BB78B271425B300C26941 /* TabbarGenerator.swift */,
-				3D9BB79027142E4D00C26941 /* HomePageViewController.swift */,
-				3D9BB7A227143A7F00C26941 /* HomePageViewController.xib */,
-				3D9BB79527142E5C00C26941 /* InfoViewController.swift */,
-				3D9BB7A727143B0A00C26941 /* InfoViewController.xib */,
-				3D9BB79A27142E6600C26941 /* AboutViewController.swift */,
-				3D9BB7AC27143B2500C26941 /* AboutViewController.xib */,
+				3D9BB7B62714421700C26941 /* main */,
+				3D9BB7B2271441DA00C26941 /* SupportFiles */,
 			);
 			path = Hello_iOS;
 			sourceTree = "<group>";
@@ -168,6 +156,55 @@
 				3D60F2C22714153D00B2B945 /* Info.plist */,
 			);
 			path = Hello_iOSUITests;
+			sourceTree = "<group>";
+		};
+		3D9BB7B2271441DA00C26941 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3D60F29E2714153900B2B945 /* AppDelegate.swift */,
+				3D60F2A72714153C00B2B945 /* Assets.xcassets */,
+				3D60F2A92714153C00B2B945 /* LaunchScreen.storyboard */,
+				3D60F2AC2714153C00B2B945 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		3D9BB7B62714421700C26941 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				3D9BB7B72714422F00C26941 /* home */,
+				3D9BB7B82714423600C26941 /* info */,
+				3D9BB7B92714423B00C26941 /* about */,
+				3D9BB78B271425B300C26941 /* TabbarGenerator.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		3D9BB7B72714422F00C26941 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				3D9BB79027142E4D00C26941 /* HomePageViewController.swift */,
+				3D9BB7A227143A7F00C26941 /* HomePageViewController.xib */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		3D9BB7B82714423600C26941 /* info */ = {
+			isa = PBXGroup;
+			children = (
+				3D9BB79527142E5C00C26941 /* InfoViewController.swift */,
+				3D9BB7A727143B0A00C26941 /* InfoViewController.xib */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		3D9BB7B92714423B00C26941 /* about */ = {
+			isa = PBXGroup;
+			children = (
+				3D9BB79A27142E6600C26941 /* AboutViewController.swift */,
+				3D9BB7AC27143B2500C26941 /* AboutViewController.xib */,
+			);
+			path = about;
 			sourceTree = "<group>";
 		};
 		95DB345BAEC94C786E8575C9 /* Pods */ = {
@@ -387,7 +424,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D60F2A32714153900B2B945 /* ViewController.swift in Sources */,
 				3D60F29F2714153900B2B945 /* AppDelegate.swift in Sources */,
 				3D9BB79B27142E6600C26941 /* AboutViewController.swift in Sources */,
 				3D9BB79127142E4D00C26941 /* HomePageViewController.swift in Sources */,
