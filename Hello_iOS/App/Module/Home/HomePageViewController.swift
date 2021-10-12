@@ -16,4 +16,7 @@ class HomePageViewController: UIViewController {
     private func setupInderface() {
         view.backgroundColor = UIColor.white
     }
+    @IBAction func toLogin(_ sender: Any) {
+        WindowManager.shared.login()
+    }
 }

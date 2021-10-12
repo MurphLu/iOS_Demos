@@ -1,5 +1,5 @@
 //
-//  TabbarGenerator.swift
+//  TabbarManager.swift
 //  Hello_iOS
 //
 //  Created by Murph on 2021/10/11.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class TabbarGenerator {
-    static let shared: TabbarGenerator = TabbarGenerator()
+class TabbarManager {
+    static let shared: TabbarManager = TabbarManager()
 
     var tabbarController: UITabBarController
 
