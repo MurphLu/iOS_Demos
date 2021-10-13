@@ -29,6 +29,9 @@
 		3D9BB7F5271531D100C26941 /* PhotoSaveManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB7F4271531D100C26941 /* PhotoSaveManager.swift */; };
 		3D9BB7FD2715325F00C26941 /* TypeAlias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB7FC2715325F00C26941 /* TypeAlias.swift */; };
 		3D9BB8032715334600C26941 /* PermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB8022715334600C26941 /* PermissionService.swift */; };
+		3D9BB8142716BD4500C26941 /* ChangeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB8122716BD4500C26941 /* ChangeAnimationViewController.swift */; };
+		3D9BB8152716BD4500C26941 /* ChangeAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9BB8132716BD4500C26941 /* ChangeAnimationViewController.xib */; };
+		3D9BB81E2716BD9700C26941 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB81D2716BD9700C26941 /* Animation.swift */; };
 		78E786D04CC6B3685333A2F8 /* Pods_Hello_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D75C08E25121EA103A5F2D /* Pods_Hello_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +80,9 @@
 		3D9BB7F4271531D100C26941 /* PhotoSaveManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSaveManager.swift; sourceTree = "<group>"; };
 		3D9BB7FC2715325F00C26941 /* TypeAlias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlias.swift; sourceTree = "<group>"; };
 		3D9BB8022715334600C26941 /* PermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionService.swift; sourceTree = "<group>"; };
+		3D9BB8122716BD4500C26941 /* ChangeAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAnimationViewController.swift; sourceTree = "<group>"; };
+		3D9BB8132716BD4500C26941 /* ChangeAnimationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeAnimationViewController.xib; sourceTree = "<group>"; };
+		3D9BB81D2716BD9700C26941 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		61D75C08E25121EA103A5F2D /* Pods_Hello_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hello_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A304BBBE47FBCD65C7E4D7 /* Pods_Hello_iOS_Hello_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hello_iOS_Hello_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77492D09B1A4688C1D7DF222 /* Pods-Hello_iOS-Hello_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello_iOS-Hello_iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Hello_iOS-Hello_iOSUITests/Pods-Hello_iOS-Hello_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +193,7 @@
 		3D9BB7B72714422F00C26941 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3D9BB8112716BD1500C26941 /* Pages */,
 				3D9BB79027142E4D00C26941 /* HomePageViewController.swift */,
 				3D9BB7A227143A7F00C26941 /* HomePageViewController.xib */,
 			);
@@ -277,6 +284,24 @@
 				3D9BB8022715334600C26941 /* PermissionService.swift */,
 			);
 			path = SystemService;
+			sourceTree = "<group>";
+		};
+		3D9BB8112716BD1500C26941 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				3D9BB81C2716BD7300C26941 /* VCChangeAnimation */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		3D9BB81C2716BD7300C26941 /* VCChangeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				3D9BB81D2716BD9700C26941 /* Animation.swift */,
+				3D9BB8122716BD4500C26941 /* ChangeAnimationViewController.swift */,
+				3D9BB8132716BD4500C26941 /* ChangeAnimationViewController.xib */,
+			);
+			path = VCChangeAnimation;
 			sourceTree = "<group>";
 		};
 		95DB345BAEC94C786E8575C9 /* Pods */ = {
@@ -400,6 +425,7 @@
 			files = (
 				3D60F2AB2714153C00B2B945 /* LaunchScreen.storyboard in Resources */,
 				3D9BB7A327143A7F00C26941 /* HomePageViewController.xib in Resources */,
+				3D9BB8152716BD4500C26941 /* ChangeAnimationViewController.xib in Resources */,
 				3D9BB7D52715202E00C26941 /* LoginViewController.xib in Resources */,
 				3D9BB7A827143B0A00C26941 /* InfoViewController.xib in Resources */,
 				3D60F2A82714153C00B2B945 /* Assets.xcassets in Resources */,
@@ -497,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9BB8142716BD4500C26941 /* ChangeAnimationViewController.swift in Sources */,
 				3D9BB7D42715202E00C26941 /* LoginViewController.swift in Sources */,
 				3D60F29F2714153900B2B945 /* AppDelegate.swift in Sources */,
 				3D9BB7EB2715312F00C26941 /* UserDefaultManager.swift in Sources */,
@@ -508,6 +535,7 @@
 				3D9BB8032715334600C26941 /* PermissionService.swift in Sources */,
 				3D9BB7F5271531D100C26941 /* PhotoSaveManager.swift in Sources */,
 				3D9BB7FD2715325F00C26941 /* TypeAlias.swift in Sources */,
+				3D9BB81E2716BD9700C26941 /* Animation.swift in Sources */,
 				3D9BB7CD27151DD300C26941 /* WindowManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

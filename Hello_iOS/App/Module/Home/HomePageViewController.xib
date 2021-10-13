@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomePageViewController" customModule="Hello_iOS" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="I4X-bi-WT0" id="vag-ga-OYs"/>
                 <outlet property="view" destination="iN0-l3-epB" id="hzn-Or-Rbz"/>
             </connections>
         </placeholder>
@@ -18,18 +19,32 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmz-et-lm2">
-                    <rect key="frame" x="178" y="383" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
-                    <connections>
-                        <action selector="toLogin:" destination="-1" eventType="touchUpInside" id="Gz5-Z3-mNF"/>
-                    </connections>
-                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bt1-9A-zQK">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="I4X-bi-WT0">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="I4X-bi-WT0" secondAttribute="bottom" id="Lpw-le-cG6"/>
+                        <constraint firstItem="I4X-bi-WT0" firstAttribute="leading" secondItem="Bt1-9A-zQK" secondAttribute="leading" id="jX6-e7-qie"/>
+                        <constraint firstAttribute="trailing" secondItem="I4X-bi-WT0" secondAttribute="trailing" id="kHP-yR-L6d"/>
+                        <constraint firstItem="I4X-bi-WT0" firstAttribute="top" secondItem="Bt1-9A-zQK" secondAttribute="top" id="nam-wO-kQW"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="117" y="117"/>
+            <constraints>
+                <constraint firstItem="Bt1-9A-zQK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XAx-LK-7XM"/>
+                <constraint firstItem="Bt1-9A-zQK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="aJj-XZ-cWF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Bt1-9A-zQK" secondAttribute="trailing" id="las-c2-DwU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Bt1-9A-zQK" secondAttribute="bottom" id="qij-ey-oC0"/>
+            </constraints>
+            <point key="canvasLocation" x="-648" y="31"/>
         </view>
     </objects>
     <resources>
