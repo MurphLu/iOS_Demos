@@ -19,6 +19,8 @@
     TestRunTime * test = [[TestRunTime alloc] init];
     [test getAllProperties];
     [test getAllMethods];
+    test.name = @"aaa";
+    NSLog(@"%@", test.name);
 }
 
 /*

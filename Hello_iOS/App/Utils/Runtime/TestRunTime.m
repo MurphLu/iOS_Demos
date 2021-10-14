@@ -7,9 +7,9 @@
 
 #import "TestRunTime.h"
 #import <objc/runtime.h>
+#import "NSObject+RunAtDealloc.h"
 
 @implementation TestRunTime
-
 - (void)getAllProperties {
     unsigned int count = 0;
     Ivar * ivars = class_copyIvarList([TestRunTime class], &count);
@@ -34,6 +34,32 @@
         NSLog(@"method name: %@", nameStr);
     }
     free(methods);
+}
+
+@end
+
+@implementation TestRunTime (addProperty)
+
+static const char *key = "name";
+static const char *descKey = "desc";
+
+- (NSString *)name {
+    return objc_getAssociatedObject(self, key);
+}
+
+- (void)setName:(NSString *)name {
+    objc_setAssociatedObject(self, key, name, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (NSString *) desc {
+    return objc_getAssociatedObject(self, descKey);
+}
+
+- (void)setDesc:(NSString *)desc {
+    objc_setAssociatedObject(self, descKey, desc, OBJC_ASSOCIATION_ASSIGN);
+    [desc runAtDealloc:^{
+        objc_setAssociatedObject(self, descKey, nil, OBJC_ASSOCIATION_ASSIGN);
+    }];
 }
 
 @end
