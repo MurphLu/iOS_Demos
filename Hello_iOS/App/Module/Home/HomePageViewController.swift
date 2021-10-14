@@ -11,7 +11,9 @@ class HomePageViewController: UIViewController {
     
     let cellConfigs: [String] = [
         "coreText",
-        "ViewControllerAnmi"
+        "ViewControllerAnmi",
+        "MethodSwizzle",
+        "runtime"
     ]
     
     @IBOutlet weak var tableView: UITableView!
@@ -50,6 +52,14 @@ extension HomePageViewController: UITableViewDataSource, UITableViewDelegate {
             break
         case "ViewControllerAnmi":
             let vc = ChangeAnimationViewController()
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
+        case "MethodSwizzle":
+            let vc = MethodSwizzleTestViewController()
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
+        case "runtime":
+            let vc = RuntimeTestViewController()
             vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
         default:

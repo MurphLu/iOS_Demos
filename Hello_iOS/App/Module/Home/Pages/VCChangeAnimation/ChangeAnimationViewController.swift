@@ -33,8 +33,10 @@ extension ChangeAnimationViewController: UINavigationControllerDelegate {
         switch operation {
         case .pop:
             return Animation(presenting: false)
-        default:
+        case .push:
             return Animation(presenting: true)
+        default:
+            return nil
         }
     }
 }
