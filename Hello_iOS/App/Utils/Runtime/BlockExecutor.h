@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 typedef void (^voidBlock)(void);
-@interface BlocExecutor : NSObject
+@interface BlockExecutor : NSObject
 -(id)initWithBlock:(voidBlock)block;
 @end
 

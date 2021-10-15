@@ -5,14 +5,14 @@
 //  Created by Murph on 2021/10/14.
 //
 
-#import "BlocExecutor.h"
+#import "BlockExecutor.h"
 
-@interface BlocExecutor () {
+@interface BlockExecutor () {
     voidBlock _block;
 }
 @end
 
-@implementation BlocExecutor
+@implementation BlockExecutor
 - (id)initWithBlock:(voidBlock)aBlock
 {
    self = [super init];

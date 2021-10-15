@@ -37,7 +37,7 @@
 		3D9BB8472717F8D200C26941 /* TestRunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB8462717F8D200C26941 /* TestRunTime.m */; };
 		3D9BB84E2717FC0000C26941 /* RuntimeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB84C2717FC0000C26941 /* RuntimeTestViewController.m */; };
 		3D9BB84F2717FC0000C26941 /* RuntimeTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9BB84D2717FC0000C26941 /* RuntimeTestViewController.xib */; };
-		3D9BB8552718253300C26941 /* BlocExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB8542718253300C26941 /* BlocExecutor.m */; };
+		3D9BB8552718253300C26941 /* BlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB8542718253300C26941 /* BlockExecutor.m */; };
 		3D9BB85E2718279000C26941 /* NSObject+RunAtDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB85D2718279000C26941 /* NSObject+RunAtDealloc.m */; };
 		3DDF07C32719234700C9B7E4 /* TestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF07C22719234700C9B7E4 /* TestObj.m */; };
 		78E786D04CC6B3685333A2F8 /* Pods_Hello_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D75C08E25121EA103A5F2D /* Pods_Hello_iOS.framework */; };
@@ -101,8 +101,8 @@
 		3D9BB84B2717FC0000C26941 /* RuntimeTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeTestViewController.h; sourceTree = "<group>"; };
 		3D9BB84C2717FC0000C26941 /* RuntimeTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeTestViewController.m; sourceTree = "<group>"; };
 		3D9BB84D2717FC0000C26941 /* RuntimeTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RuntimeTestViewController.xib; sourceTree = "<group>"; };
-		3D9BB8532718253300C26941 /* BlocExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlocExecutor.h; sourceTree = "<group>"; };
-		3D9BB8542718253300C26941 /* BlocExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocExecutor.m; sourceTree = "<group>"; };
+		3D9BB8532718253300C26941 /* BlockExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockExecutor.h; sourceTree = "<group>"; };
+		3D9BB8542718253300C26941 /* BlockExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockExecutor.m; sourceTree = "<group>"; };
 		3D9BB85C2718279000C26941 /* NSObject+RunAtDealloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RunAtDealloc.h"; sourceTree = "<group>"; };
 		3D9BB85D2718279000C26941 /* NSObject+RunAtDealloc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RunAtDealloc.m"; sourceTree = "<group>"; };
 		3DDF07C12719234700C9B7E4 /* TestObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObj.h; sourceTree = "<group>"; };
@@ -318,9 +318,7 @@
 				3D9BB81C2716BD7300C26941 /* VCChangeAnimation */,
 				3D9BB82B2716E29E00C26941 /* MethodSwizzleTestViewController.h */,
 				3D9BB82C2716E29E00C26941 /* MethodSwizzleTestViewController.m */,
-				3D9BB84B2717FC0000C26941 /* RuntimeTestViewController.h */,
-				3D9BB84C2717FC0000C26941 /* RuntimeTestViewController.m */,
-				3D9BB84D2717FC0000C26941 /* RuntimeTestViewController.xib */,
+				3DDF07C52719291F00C9B7E4 /* RuntimeTest */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -342,14 +340,24 @@
 				3D9BB8392717C74700C26941 /* UIViewController+Runtime.m */,
 				3D9BB8452717F8D200C26941 /* TestRunTime.h */,
 				3D9BB8462717F8D200C26941 /* TestRunTime.m */,
-				3D9BB8532718253300C26941 /* BlocExecutor.h */,
-				3D9BB8542718253300C26941 /* BlocExecutor.m */,
+				3D9BB8532718253300C26941 /* BlockExecutor.h */,
+				3D9BB8542718253300C26941 /* BlockExecutor.m */,
 				3D9BB85C2718279000C26941 /* NSObject+RunAtDealloc.h */,
 				3D9BB85D2718279000C26941 /* NSObject+RunAtDealloc.m */,
 				3DDF07C12719234700C9B7E4 /* TestObj.h */,
 				3DDF07C22719234700C9B7E4 /* TestObj.m */,
 			);
 			path = Runtime;
+			sourceTree = "<group>";
+		};
+		3DDF07C52719291F00C9B7E4 /* RuntimeTest */ = {
+			isa = PBXGroup;
+			children = (
+				3D9BB84B2717FC0000C26941 /* RuntimeTestViewController.h */,
+				3D9BB84C2717FC0000C26941 /* RuntimeTestViewController.m */,
+				3D9BB84D2717FC0000C26941 /* RuntimeTestViewController.xib */,
+			);
+			path = RuntimeTest;
 			sourceTree = "<group>";
 		};
 		95DB345BAEC94C786E8575C9 /* Pods */ = {
@@ -590,7 +598,7 @@
 				3D9BB8032715334600C26941 /* PermissionService.swift in Sources */,
 				3D9BB7F5271531D100C26941 /* PhotoSaveManager.swift in Sources */,
 				3D9BB82D2716E29E00C26941 /* MethodSwizzleTestViewController.m in Sources */,
-				3D9BB8552718253300C26941 /* BlocExecutor.m in Sources */,
+				3D9BB8552718253300C26941 /* BlockExecutor.m in Sources */,
 				3D9BB7FD2715325F00C26941 /* TypeAlias.swift in Sources */,
 				3D9BB81E2716BD9700C26941 /* Animation.swift in Sources */,
 				3D9BB7CD27151DD300C26941 /* WindowManager.swift in Sources */,

@@ -13,7 +13,7 @@ const void *runAtDeallocBlockKey = &runAtDeallocBlockKey;
 
 - (void)runAtDealloc:(voidBlock)block {
     if(block) {
-        BlocExecutor *executor = [[BlocExecutor alloc] initWithBlock:block];
+        BlockExecutor *executor = [[BlockExecutor alloc] initWithBlock:block];
         objc_setAssociatedObject(self, runAtDeallocBlockKey, executor, OBJC_ASSOCIATION_RETAIN);
     }
 }
