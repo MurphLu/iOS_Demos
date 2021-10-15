@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TestObj.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) int num;
 @property(nonatomic, strong) NSString *str;
 @property(nonatomic, strong) NSDictionary *map;
+@property (nonatomic, weak)TestObj *desc1;
 -(void) getAllProperties;
 - (void)getAllMethods;
 @end
@@ -21,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TestRunTime (addProperty)
 
 @property (nonatomic,copy)NSString *name;
-@property (nonatomic, weak)NSString *desc;
+@property (nonatomic, strong)TestObj *desc;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -39,6 +39,7 @@
 		3D9BB84F2717FC0000C26941 /* RuntimeTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9BB84D2717FC0000C26941 /* RuntimeTestViewController.xib */; };
 		3D9BB8552718253300C26941 /* BlocExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB8542718253300C26941 /* BlocExecutor.m */; };
 		3D9BB85E2718279000C26941 /* NSObject+RunAtDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9BB85D2718279000C26941 /* NSObject+RunAtDealloc.m */; };
+		3DDF07C32719234700C9B7E4 /* TestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF07C22719234700C9B7E4 /* TestObj.m */; };
 		78E786D04CC6B3685333A2F8 /* Pods_Hello_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D75C08E25121EA103A5F2D /* Pods_Hello_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,8 @@
 		3D9BB8542718253300C26941 /* BlocExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocExecutor.m; sourceTree = "<group>"; };
 		3D9BB85C2718279000C26941 /* NSObject+RunAtDealloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RunAtDealloc.h"; sourceTree = "<group>"; };
 		3D9BB85D2718279000C26941 /* NSObject+RunAtDealloc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RunAtDealloc.m"; sourceTree = "<group>"; };
+		3DDF07C12719234700C9B7E4 /* TestObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObj.h; sourceTree = "<group>"; };
+		3DDF07C22719234700C9B7E4 /* TestObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObj.m; sourceTree = "<group>"; };
 		61D75C08E25121EA103A5F2D /* Pods_Hello_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hello_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A304BBBE47FBCD65C7E4D7 /* Pods_Hello_iOS_Hello_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hello_iOS_Hello_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77492D09B1A4688C1D7DF222 /* Pods-Hello_iOS-Hello_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hello_iOS-Hello_iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Hello_iOS-Hello_iOSUITests/Pods-Hello_iOS-Hello_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -343,6 +346,8 @@
 				3D9BB8542718253300C26941 /* BlocExecutor.m */,
 				3D9BB85C2718279000C26941 /* NSObject+RunAtDealloc.h */,
 				3D9BB85D2718279000C26941 /* NSObject+RunAtDealloc.m */,
+				3DDF07C12719234700C9B7E4 /* TestObj.h */,
+				3DDF07C22719234700C9B7E4 /* TestObj.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -574,6 +579,7 @@
 				3D9BB83A2717C74700C26941 /* UIViewController+Runtime.m in Sources */,
 				3D60F29F2714153900B2B945 /* AppDelegate.swift in Sources */,
 				3D9BB7EB2715312F00C26941 /* UserDefaultManager.swift in Sources */,
+				3DDF07C32719234700C9B7E4 /* TestObj.m in Sources */,
 				3D9BB8472717F8D200C26941 /* TestRunTime.m in Sources */,
 				3D9BB79B27142E6600C26941 /* AboutViewController.swift in Sources */,
 				3D9BB7F02715314700C26941 /* KeychainManager.swift in Sources */,

@@ -8,7 +8,9 @@
 #import "RuntimeTestViewController.h"
 #import "TestRunTime.h"
 
-@interface RuntimeTestViewController ()
+@interface RuntimeTestViewController () {
+    TestRunTime *runtime;
+}
 
 @end
 
@@ -16,21 +18,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    TestRunTime * test = [[TestRunTime alloc] init];
-    [test getAllProperties];
-    [test getAllMethods];
-    test.name = @"aaa";
-    NSLog(@"%@", test.name);
+    runtime = [[TestRunTime alloc] init];
+    [runtime getAllProperties];
+    [runtime getAllMethods];
+    runtime.name = @"aaa";
+    NSLog(@"%@", runtime.name);
+    @autoreleasepool {
+        TestObj *str = [[TestObj alloc] init];
+        runtime.desc1 = str;
+        runtime.desc = str;
+        NSLog(@"%@", runtime.desc);
+        NSLog(@"%@", runtime.desc1);
+    }
+    
+    NSLog(@"%@", runtime.desc);
+    NSLog(@"%@", runtime.desc1);
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)test_print:(UIButton *)sender {
+    NSLog(@"%@", runtime.desc);
+    NSLog(@"%@", runtime.desc1);
 }
-*/
 
 @end

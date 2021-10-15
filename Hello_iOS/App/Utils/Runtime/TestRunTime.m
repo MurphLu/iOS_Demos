@@ -51,11 +51,11 @@ static const char *descKey = "desc";
     objc_setAssociatedObject(self, key, name, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-- (NSString *) desc {
+- (TestObj *) desc {
     return objc_getAssociatedObject(self, descKey);
 }
 
-- (void)setDesc:(NSString *)desc {
+- (void)setDesc:(TestObj *)desc {
     objc_setAssociatedObject(self, descKey, desc, OBJC_ASSOCIATION_ASSIGN);
     [desc runAtDealloc:^{
         objc_setAssociatedObject(self, descKey, nil, OBJC_ASSOCIATION_ASSIGN);
