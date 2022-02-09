@@ -27,9 +27,9 @@
 @implementation UIViewController (Runtime)
 + (void)load {
     // 通过 method_exchangeImplementations 来交换两个方法的实现
-    Method viewDidLoad = class_getInstanceMethod([UIViewController self], @selector(viewDidLoad));
-    Method viewDidLoadNew = class_getInstanceMethod([UIViewController self], @selector(viewDidLoadNew));
-    method_exchangeImplementations(viewDidLoad, viewDidLoadNew);
+//    Method viewDidLoad = class_getInstanceMethod([UIViewController self], @selector(viewDidLoad));
+//    Method viewDidLoadNew = class_getInstanceMethod([UIViewController self], @selector(viewDidLoadNew));
+//    method_exchangeImplementations(viewDidLoad, viewDidLoadNew);
 }
 
 - (void)viewDidLoadNew {

@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		2174288B7AE82CAB7276922E /* Pods_Hello_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E1EF1F2AAAFEF9B1BE18B6 /* Pods_Hello_iOSTests.framework */; };
 		350908CE81B5AB24BAC4BF31 /* Pods_Hello_iOS_Hello_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A304BBBE47FBCD65C7E4D7 /* Pods_Hello_iOS_Hello_iOSUITests.framework */; };
+		3D04F61127B3692400AF648F /* JailBreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D04F61027B3692400AF648F /* JailBreakChecker.swift */; };
+		3D354666272922CA002CCFC1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D354664272922CA002CCFC1 /* TableViewController.swift */; };
+		3D354667272922CA002CCFC1 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D354665272922CA002CCFC1 /* TableViewController.xib */; };
+		3D35466927292F4F002CCFC1 /* TableSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35466827292F4F002CCFC1 /* TableSectionHeader.swift */; };
+		3D35466B272933AB002CCFC1 /* TableSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D35466A272933AA002CCFC1 /* TableSectionHeader.xib */; };
 		3D60F29F2714153900B2B945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60F29E2714153900B2B945 /* AppDelegate.swift */; };
 		3D60F2A82714153C00B2B945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D60F2A72714153C00B2B945 /* Assets.xcassets */; };
 		3D60F2AB2714153C00B2B945 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D60F2A92714153C00B2B945 /* LaunchScreen.storyboard */; };
@@ -62,6 +67,11 @@
 
 /* Begin PBXFileReference section */
 		12E1EF1F2AAAFEF9B1BE18B6 /* Pods_Hello_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hello_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D04F61027B3692400AF648F /* JailBreakChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailBreakChecker.swift; sourceTree = "<group>"; };
+		3D354664272922CA002CCFC1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3D354665272922CA002CCFC1 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		3D35466827292F4F002CCFC1 /* TableSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSectionHeader.swift; sourceTree = "<group>"; };
+		3D35466A272933AA002CCFC1 /* TableSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableSectionHeader.xib; sourceTree = "<group>"; };
 		3D60F29B2714153900B2B945 /* Hello_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D60F29E2714153900B2B945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D60F2A72714153C00B2B945 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -153,6 +163,14 @@
 				12E1EF1F2AAAFEF9B1BE18B6 /* Pods_Hello_iOSTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D04F60F27B368F700AF648F /* jailBreakCheck */ = {
+			isa = PBXGroup;
+			children = (
+				3D04F61027B3692400AF648F /* JailBreakChecker.swift */,
+			);
+			path = jailBreakCheck;
 			sourceTree = "<group>";
 		};
 		3D60F2922714153900B2B945 = {
@@ -286,6 +304,7 @@
 		3D9BB7E8271530EF00C26941 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				3D04F60F27B368F700AF648F /* jailBreakCheck */,
 				3D9BB7FC2715325F00C26941 /* TypeAlias.swift */,
 				3D9BB8012715332A00C26941 /* SystemService */,
 				3D9BB7E92715310400C26941 /* StorageManagers */,
@@ -319,6 +338,10 @@
 				3D9BB82B2716E29E00C26941 /* MethodSwizzleTestViewController.h */,
 				3D9BB82C2716E29E00C26941 /* MethodSwizzleTestViewController.m */,
 				3DDF07C52719291F00C9B7E4 /* RuntimeTest */,
+				3D354664272922CA002CCFC1 /* TableViewController.swift */,
+				3D354665272922CA002CCFC1 /* TableViewController.xib */,
+				3D35466827292F4F002CCFC1 /* TableSectionHeader.swift */,
+				3D35466A272933AA002CCFC1 /* TableSectionHeader.xib */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -483,9 +506,11 @@
 				3D60F2AB2714153C00B2B945 /* LaunchScreen.storyboard in Resources */,
 				3D9BB84F2717FC0000C26941 /* RuntimeTestViewController.xib in Resources */,
 				3D9BB7A327143A7F00C26941 /* HomePageViewController.xib in Resources */,
+				3D35466B272933AB002CCFC1 /* TableSectionHeader.xib in Resources */,
 				3D9BB8152716BD4500C26941 /* ChangeAnimationViewController.xib in Resources */,
 				3D9BB7D52715202E00C26941 /* LoginViewController.xib in Resources */,
 				3D9BB7A827143B0A00C26941 /* InfoViewController.xib in Resources */,
+				3D354667272922CA002CCFC1 /* TableViewController.xib in Resources */,
 				3D60F2A82714153C00B2B945 /* Assets.xcassets in Resources */,
 				3D9BB7AD27143B2500C26941 /* AboutViewController.xib in Resources */,
 			);
@@ -585,6 +610,7 @@
 				3D9BB84E2717FC0000C26941 /* RuntimeTestViewController.m in Sources */,
 				3D9BB7D42715202E00C26941 /* LoginViewController.swift in Sources */,
 				3D9BB83A2717C74700C26941 /* UIViewController+Runtime.m in Sources */,
+				3D35466927292F4F002CCFC1 /* TableSectionHeader.swift in Sources */,
 				3D60F29F2714153900B2B945 /* AppDelegate.swift in Sources */,
 				3D9BB7EB2715312F00C26941 /* UserDefaultManager.swift in Sources */,
 				3DDF07C32719234700C9B7E4 /* TestObj.m in Sources */,
@@ -598,6 +624,8 @@
 				3D9BB8032715334600C26941 /* PermissionService.swift in Sources */,
 				3D9BB7F5271531D100C26941 /* PhotoSaveManager.swift in Sources */,
 				3D9BB82D2716E29E00C26941 /* MethodSwizzleTestViewController.m in Sources */,
+				3D354666272922CA002CCFC1 /* TableViewController.swift in Sources */,
+				3D04F61127B3692400AF648F /* JailBreakChecker.swift in Sources */,
 				3D9BB8552718253300C26941 /* BlockExecutor.m in Sources */,
 				3D9BB7FD2715325F00C26941 /* TypeAlias.swift in Sources */,
 				3D9BB81E2716BD9700C26941 /* Animation.swift in Sources */,
@@ -774,6 +802,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D5A547Y93;
 				INFOPLIST_FILE = Hello_iOS/SupportFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -797,6 +826,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D5A547Y93;
 				INFOPLIST_FILE = Hello_iOS/SupportFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -13,7 +13,8 @@ class HomePageViewController: UIViewController {
         "coreText",
         "ViewControllerAnmi",
         "MethodSwizzle",
-        "runtime"
+        "runtime",
+        "TableView"
     ]
     
     @IBOutlet weak var tableView: UITableView!
@@ -60,6 +61,10 @@ extension HomePageViewController: UITableViewDataSource, UITableViewDelegate {
             self.navigationController?.pushViewController(vc, animated: true)
         case "runtime":
             let vc = RuntimeTestViewController()
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
+        case "TableView":
+            let vc = TableViewController()
             vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
         default:
