@@ -86,6 +86,7 @@
 
 void trackEventForViewDidLoadImpl(id self, SEL cmd, id Num) {
     NSLog(@"%@的%@方法动态实现了，参数为%@", [self class], NSStringFromSelector(cmd), Num);
+    [NSRunLoop currentRunLoop]
 }
 
 @end

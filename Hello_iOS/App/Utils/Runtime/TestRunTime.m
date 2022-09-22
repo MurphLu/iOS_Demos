@@ -60,6 +60,7 @@ static const char *descKey = "desc";
     [desc runAtDealloc:^{
         objc_setAssociatedObject(self, descKey, nil, OBJC_ASSOCIATION_ASSIGN);
     }];
+    
 }
 
 @end
